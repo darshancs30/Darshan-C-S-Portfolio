@@ -174,11 +174,11 @@
 
   /* Gradient text - Enhanced visibility */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--primary-glow)) 100%);
+    background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 50%, #8b5cf6 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px hsl(var(--primary) / 0.3);
+    text-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
     font-weight: 800;
   }
 
