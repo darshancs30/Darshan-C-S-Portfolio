@@ -31,7 +31,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/darshan-c-s-07235b377",
+      href: "https://www.linkedin.com/in/darshan-c-s-07235b377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "text-blue-600",
       bgColor: "bg-blue-50"
     },

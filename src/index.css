@@ -172,12 +172,14 @@
     box-shadow: var(--shadow-strong);
   }
 
-  /* Gradient text */
+  /* Gradient text - Enhanced visibility */
   .gradient-text {
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--primary-glow)) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px hsl(var(--primary) / 0.3);
+    font-weight: 800;
   }
 
   /* Glass effect */

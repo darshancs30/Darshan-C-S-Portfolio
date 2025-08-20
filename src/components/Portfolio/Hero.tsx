@@ -4,11 +4,8 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    // Create a downloadable resume link
-    const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This would be placed in public folder
-    link.download = 'Darshan_CS_Resume.pdf';
-    link.click();
+    // Open Google Drive resume link
+    window.open('https://drive.google.com/file/d/14yi5DpL1Ol8hS2f6LjKvnbq56ogUo3ef/view?usp=sharing', '_blank');
   };
 
   const handleContactMe = () => {
@@ -40,7 +37,7 @@ const Hero = () => {
           </span>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text drop-shadow-lg">
           Darshan C S
         </h1>
         
@@ -59,7 +56,7 @@ const Hero = () => {
             <Github className="w-6 h-6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/darshan-c-s-07235b377"
+            href="https://www.linkedin.com/in/darshan-c-s-07235b377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 bg-card/50 rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 animate-glow"
