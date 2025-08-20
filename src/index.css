@@ -172,10 +172,17 @@
     box-shadow: var(--shadow-strong);
   }
 
-  /* Gradient text - Enhanced visibility */
+  /* Gradient text - Enhanced visibility (for name only) */
   .gradient-text {
     color: white;
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+  }
+
+  /* Blue headings for sections */
+  .blue-heading {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.2);
     font-weight: 800;
   }
 
