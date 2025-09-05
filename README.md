@@ -17,10 +17,10 @@ Follow these steps to clone and run the project locally:
 
 ```sh
 # Step 1: Clone the repository
-git clone https://github.com/jigar-sable/Portfolio-Website.git
+git clone https://github.com/darshancs30/Darshan-C-S-Portfolio.git
 
 # Step 2: Navigate to the project directory
-cd Portfolio-Website/Darshan C S-Portfolio
+cd Portfolio\Darshan C S-Portfolio
 
 # Step 3: Install dependencies
 npm install
