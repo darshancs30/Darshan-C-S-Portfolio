@@ -13,6 +13,15 @@ const About = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* About Image */}
+          <div className="flex justify-center items-center lg:justify-end lg:pr-8 h-full">
+            <img
+              src="/IMG_2965.jpg"
+              alt="Darshan C S"
+              className="rounded-xl shadow-lg w-[26rem] h-[26rem] object-cover border-4 border-primary lg:self-center"
+              style={{ maxHeight: '100%', maxWidth: '100%' }}
+            />
+          </div>
           {/* About Content */}
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-foreground/80">

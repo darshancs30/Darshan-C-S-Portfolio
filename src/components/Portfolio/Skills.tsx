@@ -7,13 +7,13 @@ const Skills = () => {
     {
       title: "Programming Languages",
       icon: Code,
-      skills: ["Python", "JavaScript", "Java", "Go"],
+  skills: ["Python", "JavaScript", "Java"],
       color: "text-blue-600"
     },
     {
       title: "Frontend & Mobile",
       icon: Smartphone,
-      skills: ["React.js", "Next.js", "React Native", "Flutter", "Android", "iOS"],
+  skills: ["React.js", "Next.js", "React Native", "Flutter", "Android"],
       color: "text-green-600"
     },
     {

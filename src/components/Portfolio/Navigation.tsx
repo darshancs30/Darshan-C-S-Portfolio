@@ -7,13 +7,13 @@ const Navigation = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { id: "home", label: "Home", icon: Home },
-    { id: "about", label: "About", icon: User },
-    { id: "skills", label: "Skills", icon: Code },
-    { id: "projects", label: "Projects", icon: Briefcase },
-    { id: "achievements", label: "Achievements", icon: Trophy },
-    { id: "certifications", label: "Certifications", icon: Award },
-    { id: "contact", label: "Contact", icon: Mail },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "achievements", label: "Achievements" },
+    { id: "certifications", label: "Certifications" },
+    { id: "contact", label: "Contact" },
   ];
 
   useEffect(() => {
@@ -58,24 +58,20 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
-            {navItems.map((item) => {
-              const IconComponent = item.icon;
-              return (
-                <Button
-                  key={item.id}
-                  variant="ghost"
-                  onClick={() => scrollToSection(item.id)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 ${
-                    activeSection === item.id
-                      ? "bg-primary text-primary-foreground"
-                      : "hover:bg-primary/10 hover:text-primary"
-                  }`}
-                >
-                  <IconComponent className="w-4 h-4" />
-                  {item.label}
-                </Button>
-              );
-            })}
+            {navItems.map((item) => (
+              <Button
+                key={item.id}
+                variant="ghost"
+                onClick={() => scrollToSection(item.id)}
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+                  activeSection === item.id
+                    ? "bg-primary text-primary-foreground"
+                    : "hover:bg-primary/10 hover:text-primary"
+                }`}
+              >
+                {item.label}
+              </Button>
+            ))}
           </div>
 
           {/* Mobile menu button */}
@@ -95,24 +91,20 @@ const Navigation = () => {
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border shadow-medium">
             <div className="p-4 space-y-2">
-              {navItems.map((item) => {
-                const IconComponent = item.icon;
-                return (
-                  <Button
-                    key={item.id}
-                    variant="ghost"
-                    onClick={() => scrollToSection(item.id)}
-                    className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
-                      activeSection === item.id
-                        ? "bg-primary text-primary-foreground"
-                        : "hover:bg-primary/10 hover:text-primary"
-                    }`}
-                  >
-                    <IconComponent className="w-5 h-5" />
-                    {item.label}
-                  </Button>
-                );
-              })}
+              {navItems.map((item) => (
+                <Button
+                  key={item.id}
+                  variant="ghost"
+                  onClick={() => scrollToSection(item.id)}
+                  className={`w-full flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 ${
+                    activeSection === item.id
+                      ? "bg-primary text-primary-foreground"
+                      : "hover:bg-primary/10 hover:text-primary"
+                  }`}
+                >
+                  {item.label}
+                </Button>
+              ))}
             </div>
           </div>
         )}
